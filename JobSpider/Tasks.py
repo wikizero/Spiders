@@ -20,13 +20,11 @@ app.conf.task_routes = {
 
 @app.task
 def lagou_info_task(url):
-    time.sleep(12)
     return Lagou.info(url)
 
 
 @app.task
 def lagou_url_task(url):
-    time.sleep(12)
     urls = Lagou.main(url)
     if urls:
         for _url in urls:
@@ -38,13 +36,11 @@ def lagou_url_task(url):
 
 @app.task
 def boss_info_task(url):
-    time.sleep(12)
     return Boss.info(url)
 
 
 @app.task
 def boss_url_task(url):
-    time.sleep(12)
     urls = Boss.main(url)
     if urls:
         for _url in urls:
@@ -55,7 +51,7 @@ def boss_url_task(url):
 
 
 if __name__ == '__main__':
-    # os.system('celery -A Tasks worker -n worker1 -Q boss -c 1  --loglevel=info')
+    os.system('celery -A Tasks worker -n worker1 -Q boss -c 1  --loglevel=info')
     # os.system('celery -A Tasks worker -n worker2 -Q lagou -c 1  --loglevel=info')
-    os.system('celery flower -A Tasks')
+    # os.system('celery flower -A Tasks')
     # pass

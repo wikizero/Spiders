@@ -6,13 +6,13 @@ import re
 
 def is_valid_proxy(ip_s):
     ip, port = ip_s.split(':')
-    url = 'https://www.lagou.com/'
+    url = 'https://www.zhipin.com/'
     proxies = {
            'http': 'http://' + str(ip) + ':' + str(port),
         }
 
     try:
-        ret = requests.get(url, proxies=proxies, timeout=5)
+        ret = requests.get(url, proxies=proxies, timeout=35)
     except Exception, e:
         print e
         return False
