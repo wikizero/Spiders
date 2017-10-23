@@ -3,7 +3,8 @@ import scrapy
 from verifyIp import is_valid_proxy
 import redis
 
-class CatchproxyipSpider(scrapy.Spider):
+
+class CatchProxyIpSpider(scrapy.Spider):
     name = 'catchProxyIp'
     allowed_domains = ['http://www.xicidaili.com/']
     #start_urls = ['http://www.xicidaili.com/nn//1']
