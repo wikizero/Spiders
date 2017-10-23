@@ -71,6 +71,8 @@ def main(url):
 
 
 def info(url):
+    if not url:
+        return False
 	text = send_request(url)
 	if not text:
 		return False
@@ -97,7 +99,7 @@ def info(url):
 
 if __name__ == '__main__':
 	url = ['https://www.zhipin.com/c101010100/h_101010100/?query=python&page=' + str(i+1) + '&ka=page-5' for i in xrange(30)]
-	for u in url:
+	for u in url[::-1]:
 		print u
 		# boss_url_task.apply_async(args=[u], queue='boss', )
 		for link in main(u):

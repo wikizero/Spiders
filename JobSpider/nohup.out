@@ -2160,3 +2160,34 @@ Traceback (most recent call last):
   File "Boss.py", line 104, in <module>
     for link in main(u):
 TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "Boss.py", line 3, in <module>
+    from Tasks import *
+  File "/home/project/Spiders/JobSpider/Tasks.py", line 4, in <module>
+    import Lagou, Boss
+  File "/home/project/Spiders/JobSpider/Lagou.py", line 67
+    if not text:
+               ^
+IndentationError: unindent does not match any outer indentation level
+  File "Lagou.py", line 67
+    if not text:
+               ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "Boss.py", line 3, in <module>
+    from Tasks import *
+  File "/home/project/Spiders/JobSpider/Tasks.py", line 4, in <module>
+    import Lagou, Boss
+  File "/home/project/Spiders/JobSpider/Lagou.py", line 67
+    if not text:
+               ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "Boss.py", line 3, in <module>
+    from Tasks import *
+  File "/home/project/Spiders/JobSpider/Tasks.py", line 4, in <module>
+    import Lagou, Boss
+  File "/home/project/Spiders/JobSpider/Lagou.py", line 67
+    if not text:
+               ^
+IndentationError: unindent does not match any outer indentation level

@@ -64,11 +64,15 @@ def send_request(url, times=0):
 
 def main(url):
 	text = send_request(url)
+    if not text:
+        return False
 	obj = BeautifulSoup(text, 'lxml')
 	return [title.get('href') for title in obj.find_all('a', class_='position_link')]
 
 
 def info(url):
+    if not url:
+        return False
 	text = send_request(url)
 	if not text:
 		return False
