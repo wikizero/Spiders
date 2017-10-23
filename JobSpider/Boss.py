@@ -22,7 +22,7 @@ def get_ip():
 
 	if ip in lst:
 		return get_ip()
-	if verifyIp.is_valid_proxy(ip):
+	if verifyIp.is_valid_proxy(ip, 'https://www.zhipin.com'):
 		return ip
 	else:
 		lst.append(ip)
@@ -31,7 +31,6 @@ def get_ip():
 
 
 def send_request(url, times=0):
-
 	times += 1
 	if times >= 10:
 		return False

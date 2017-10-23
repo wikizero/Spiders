@@ -13,13 +13,16 @@ class LagouSpider(scrapy.Spider):
 
     def parse(self, response):
         content = response.css('.position_link::attr(href)').extract()
-        cookies = response.request.headers
         headers = response.headers
+
+        next_page = response.css('.pager_container a:last-child::attr(href)').extract()
+        print next_page
+        if 'www.lagou.com' in next_page:
+            yield Request(next_page, headers=headers, callback=self.parse, dont_filter=True)
+
         for link in content:
-            #print headers
-            time.sleep(0.5)
-            # Request set cookies
             yield Request(link, headers=headers, callback=self.parse_info, dont_filter=True)
+
 
     def parse_info(self, response):
         position = response.css('.job-name .name::text').extract()

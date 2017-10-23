@@ -4,9 +4,8 @@ import redis
 import re
 
 
-def is_valid_proxy(ip_s):
+def is_valid_proxy(ip_s, url):
     ip, port = ip_s.split(':')
-    url = 'https://www.zhipin.com/'
     proxies = {
            'http': 'http://' + str(ip) + ':' + str(port),
         }

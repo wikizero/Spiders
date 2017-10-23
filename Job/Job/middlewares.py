@@ -7,6 +7,8 @@
 
 from scrapy import signals
 import random
+import redis
+from spiders import verifyIp
 
 
 class JobSpiderMiddleware(object):
@@ -58,10 +60,18 @@ class JobSpiderMiddleware(object):
 
 class ProxyMiddleware(object):
     # overwrite process request
-    proxyList = ['59.40.51.250:8010']
+    # proxyList = ['59.40.51.250:8010']
 
     def process_request(self, request, spider):
-        if 'xicidaili' not in request.url:
-            proxy_ip = random.choice(self.proxyList)
-            request.meta['proxy'] = 'http://'+proxy_ip
+        # proxy_ip = random.choice(self.proxyList)
+        con = redis.Redis()
+        proxy_ip = ''
+        _bool = True
+        while _bool:
+            proxy_ip = con.brpop('ips')[1]
+            if verifyIp.is_valid_proxy(proxy_ip):
+                _bool = False
+
+        request.meta['proxy'] = 'http://'+proxy_ip
+        con.lpush('ips', proxy_ip)
 
