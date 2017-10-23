@@ -24,6 +24,6 @@ class Job(Model):
 		database = db
 
 
-# db.connect()
+#db.connect()
 # db.drop_tables([Job])
-# db.create_tables([Job])
+#db.create_tables([Job])
