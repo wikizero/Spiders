@@ -1,0 +1,2162 @@
+Traceback (most recent call last):
+  File "Boss.py", line 3, in <module>
+    from Tasks import *
+  File "/home/project/Spiders/JobSpider/Tasks.py", line 4, in <module>
+    import Lagou, Boss
+  File "/home/project/Spiders/JobSpider/Boss.py", line 8, in <module>
+    from JobModels import *
+  File "/home/project/Spiders/JobSpider/JobModels.py", line 29, in <module>
+    db.create_tables([Job])
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3855, in create_tables
+    create_model_tables(models, fail_silently=safe)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 5294, in create_model_tables
+    m.create_table(**create_table_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4975, in create_table
+    db.create_table(cls)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3852, in create_table
+    return self.execute_sql(*qc.create_table(model_class, safe))
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3775, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3598, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3768, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+peewee.OperationalError: (1050, "Table 'job' already exists")
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=1&ka=page-5
+36.69.98.174:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=1&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac6c7d50>, 'Connection to 36.69.98.174 timed out. (connect timeout=30)'))
+ip_lst: 1
+31.134.60.208:53281
+https://www.zhipin.com/job_detail/1415019304.html
+131.255.135.214:8080
+https://www.zhipin.com/job_detail/1415019304.html
+Python工程师
+https://www.zhipin.com/job_detail/1415031756.html
+61.156.40.49:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031756.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 2
+94.228.196.23:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031756.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 3
+180.244.141.21:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031756.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 4
+115.79.43.156:8888
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 5
+106.3.129.99:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031756.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 6
+190.131.203.90:3128
+https://www.zhipin.com/job_detail/1415031756.html
+Python后台开发工程师
+https://www.zhipin.com/job_detail/1415020800.html
+14.152.50.39:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415020800.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 7
+217.26.253.126:63909
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415020800.html (Caused by SSLError(SSLError("bad handshake: SysCallError(-1, 'Unexpected EOF')",),))
+ip_lst: 8
+177.131.55.147:53281
+https://www.zhipin.com/job_detail/1415020800.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1415031978.html
+180.183.112.96:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031978.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe381d0>, 'Connection to 180.183.112.96 timed out. (connect timeout=30)'))
+ip_lst: 9
+157.255.129.20:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415031978.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 10
+177.180.10.220:8080
+https://www.zhipin.com/job_detail/1415031978.html
+Python
+https://www.zhipin.com/job_detail/1414975845.html
+202.190.165.68:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414975845.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac450150>, 'Connection to 202.190.165.68 timed out. (connect timeout=30)'))
+ip_lst: 11
+54.233.214.117:80
+https://www.zhipin.com/job_detail/1414975845.html
+python工程师
+https://www.zhipin.com/job_detail/1415002297.html
+163.53.180.12:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415002297.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 12
+123.1.194.175:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415002297.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 13
+130.185.78.176:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415002297.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 14
+183.240.39.18:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415002297.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 15
+103.87.16.2:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415002297.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 503 Service Unavailable',)))
+ip_lst: 16
+103.77.61.22:8080
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 17
+13.113.234.200:80
+https://www.zhipin.com/job_detail/1415002297.html
+python
+https://www.zhipin.com/job_detail/1415028436.html
+1.20.92.13:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac627b90>, 'Connection to 1.20.92.13 timed out. (connect timeout=30)'))
+ip_lst: 18
+46.242.104.236:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 19
+1.172.200.208:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac505e90>, 'Connection to 1.172.200.208 timed out. (connect timeout=30)'))
+ip_lst: 20
+124.124.244.137:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5bc450>, 'Connection to 124.124.244.137 timed out. (connect timeout=30)'))
+ip_lst: 21
+52.36.87.149:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 407 Proxy Authentication Required',)))
+ip_lst: 22
+61.164.250.23:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 23
+157.255.128.158:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415028436.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 24
+69.27.184.131:53281
+https://www.zhipin.com/job_detail/1415028436.html
+Python后端工程师
+https://www.zhipin.com/job_detail/1414962960.html
+31.135.64.76:3128
+https://www.zhipin.com/job_detail/1414962960.html
+python运维开发工程师
+https://www.zhipin.com/job_detail/1414962520.html
+91.237.161.166:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962520.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac3a0fd0>, 'Connection to 91.237.161.166 timed out. (connect timeout=30)'))
+ip_lst: 25
+45.32.182.192:3128
+https://www.zhipin.com/job_detail/1414962520.html
+python运维开发工程师
+https://www.zhipin.com/job_detail/1414956017.html
+177.1.25.242:8080
+https://www.zhipin.com/job_detail/1414956017.html
+游戏服务器(Python)开发工程师
+https://www.zhipin.com/job_detail/1414962909.html
+185.93.240.132:8080
+https://www.zhipin.com/job_detail/1414962909.html
+python运维开发工程师
+https://www.zhipin.com/job_detail/1415011437.html
+42.245.252.36:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415011437.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Access Denied',)))
+ip_lst: 26
+111.32.16.67:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415011437.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 27
+181.57.168.198:8080
+https://www.zhipin.com/job_detail/1415011437.html
+服务器开发（nodejs/java/python/golong)
+https://www.zhipin.com/job_detail/1414926576.html
+122.228.85.10:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414926576.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 28
+101.129.17.33:8080
+https://www.zhipin.com/job_detail/1414926576.html
+python工程师
+https://www.zhipin.com/job_detail/1414981604.html
+59.37.132.26:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981604.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 29
+114.199.125.242:8080
+https://www.zhipin.com/job_detail/1414981604.html
+Python
+https://www.zhipin.com/job_detail/1414892124.html
+212.83.164.85:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414892124.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 30
+13.124.191.198:3128
+https://www.zhipin.com/job_detail/1414892124.html
+python开发
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=2&ka=page-5
+183.56.162.107:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=2&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 31
+113.13.185.130:65309
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=2&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac25d250>, 'Connection to 113.13.185.130 timed out. (connect timeout=30)'))
+ip_lst: 32
+110.77.212.50:52335
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=2&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac2710d0>, 'Connection to 110.77.212.50 timed out. (connect timeout=30)'))
+ip_lst: 33
+180.243.20.8:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=2&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 34
+210.38.1.148:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=2&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Access Denied',)))
+ip_lst: 35
+103.89.253.190:63909
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out. (read timeout=30)
+ip_lst: 36
+186.250.232.109:53281
+https://www.zhipin.com/job_detail/1414941504.html
+60.21.221.228:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414941504.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab2c1810>, 'Connection to 60.21.221.228 timed out. (connect timeout=30)'))
+ip_lst: 37
+104.41.26.75:80
+https://www.zhipin.com/job_detail/1414941504.html
+高级python开发工程师
+https://www.zhipin.com/job_detail/1414893067.html
+117.2.81.221:8888
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 38
+180.183.97.79:8080
+https://www.zhipin.com/job_detail/1414893067.html
+python后端工程师
+https://www.zhipin.com/job_detail/1414981845.html
+211.99.26.9:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 39
+220.167.104.164:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 40
+94.182.182.86:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac4cf850>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 41
+123.1.194.117:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 42
+150.138.152.184:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 43
+203.236.50.51:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 44
+143.0.188.26:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 45
+151.249.224.53:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac41e9d0>, 'Connection to 151.249.224.53 timed out. (connect timeout=30)'))
+ip_lst: 46
+183.240.39.53:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414981845.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 47
+False
+https://www.zhipin.com/job_detail/1414927903.html
+219.148.201.54:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 502 Proxy Error',)))
+ip_lst: 48
+61.240.150.233:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 49
+45.58.124.173:8118
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 50
+200.54.103.76:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac4e0910>, 'Connection to 200.54.103.76 timed out. (connect timeout=30)'))
+ip_lst: 51
+121.32.230.12:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 52
+223.110.240.214:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414927903.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 53
+202.46.9.150:8080
+https://www.zhipin.com/job_detail/1414927903.html
+Python后端开发
+https://www.zhipin.com/job_detail/1414957666.html
+185.95.186.50:53281
+https://www.zhipin.com/job_detail/1414957666.html
+Python高级工程师
+https://www.zhipin.com/job_detail/1414810545.html
+110.139.151.86:8080
+https://www.zhipin.com/job_detail/1414810545.html
+Python工程师
+https://www.zhipin.com/job_detail/1415007983.html
+139.59.107.171:8080
+https://www.zhipin.com/job_detail/1415007983.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414922552.html
+157.255.129.22:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414922552.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 54
+152.251.246.56:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414922552.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab9c0490>, 'Connection to 152.251.246.56 timed out. (connect timeout=30)'))
+ip_lst: 55
+180.249.4.80:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414922552.html (Caused by SSLError(SSLError("bad handshake: SysCallError(-1, 'Unexpected EOF')",),))
+ip_lst: 56
+123.1.194.55:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414922552.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 57
+154.72.192.154:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414922552.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 58
+52.193.32.211:80
+https://www.zhipin.com/job_detail/1414922552.html
+Python
+https://www.zhipin.com/job_detail/1414962444.html
+183.89.17.210:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab6fc450>, 'Connection to 183.89.17.210 timed out. (connect timeout=30)'))
+ip_lst: 59
+120.27.49.85:8090
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 60
+200.195.135.3:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 61
+138.0.155.195:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 62
+221.5.100.15:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 63
+118.189.172.136:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 64
+120.221.96.195:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 65
+183.131.64.76:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 66
+41.77.128.18:53005
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414962444.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 67
+False
+https://www.zhipin.com/job_detail/1414891437.html
+134.255.218.176:3128
+https://www.zhipin.com/job_detail/1414891437.html
+Python工程师
+https://www.zhipin.com/job_detail/1414953739.html
+103.54.217.250:8080
+https://www.zhipin.com/job_detail/1414953739.html
+Python后端
+https://www.zhipin.com/job_detail/1414874996.html
+190.173.177.155:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414874996.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 68
+121.205.165.81:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414874996.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 69
+152.232.198.120:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414874996.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac50a050>, 'Connection to 152.232.198.120 timed out. (connect timeout=30)'))
+ip_lst: 70
+193.19.132.1:8080
+https://www.zhipin.com/job_detail/1414874996.html
+Python 高级工程师（模拟请求、爬虫方向）
+https://www.zhipin.com/job_detail/1414732010.html
+103.83.164.158:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414732010.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5fdbd0>, 'Connection to 103.83.164.158 timed out. (connect timeout=30)'))
+ip_lst: 71
+52.166.145.45:80
+https://www.zhipin.com/job_detail/1414732010.html
+Python
+https://www.zhipin.com/job_detail/1414941009.html
+103.70.144.70:52335
+https://www.zhipin.com/job_detail/1414941009.html
+Python中高级工程师（Web方向）
+https://www.zhipin.com/job_detail/1414782103.html
+181.129.41.58:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414782103.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb5bfd0>, 'Connection to 181.129.41.58 timed out. (connect timeout=30)'))
+ip_lst: 72
+150.107.205.114:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414782103.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb5ba10>, 'Connection to 150.107.205.114 timed out. (connect timeout=30)'))
+ip_lst: 73
+186.229.10.178:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414782103.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb63090>, 'Connection to 186.229.10.178 timed out. (connect timeout=30)'))
+ip_lst: 74
+62.15.205.71:53281
+https://www.zhipin.com/job_detail/1414782103.html
+Python
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=3&ka=page-5
+116.199.115.78:80
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 75
+1.83.124.41:8118
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 76
+103.251.236.164:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=3&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 77
+52.178.197.34:3128
+https://www.zhipin.com/job_detail/1414950489.html
+123.1.194.87:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414950489.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 78
+110.73.0.11:8123
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414950489.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac142450>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 79
+211.75.222.155:8080
+https://www.zhipin.com/job_detail/1414950489.html
+python
+https://www.zhipin.com/job_detail/1414844287.html
+123.57.76.102:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414844287.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 80
+123.134.94.37:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414844287.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 81
+111.62.243.64:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414844287.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 82
+125.31.19.26:80
+42.81.104.12:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414844287.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 83
+103.200.23.56:3128
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 84
+111.41.51.29:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414844287.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 85
+163.172.220.221:8888
+https://www.zhipin.com/job_detail/1414844287.html
+python运维开发工程师
+https://www.zhipin.com/job_detail/1414914524.html
+122.228.84.39:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414914524.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 86
+183.89.192.65:8080
+https://www.zhipin.com/job_detail/1414914524.html
+python工程师（后端方向）
+https://www.zhipin.com/job_detail/1414823388.html
+177.22.107.161:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414823388.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab4386d0>, 'Connection to 177.22.107.161 timed out. (connect timeout=30)'))
+ip_lst: 87
+178.46.163.166:8080
+https://www.zhipin.com/job_detail/1414823388.html
+Python培训讲师
+https://www.zhipin.com/job_detail/1414842243.html
+27.72.62.195:8888
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 88
+187.49.235.102:80
+https://www.zhipin.com/job_detail/1414842243.html
+python后台开发工程师
+https://www.zhipin.com/job_detail/1414875380.html
+46.216.44.164:8080
+https://www.zhipin.com/job_detail/1414875380.html
+Python 高级工程师
+https://www.zhipin.com/job_detail/1414768019.html
+183.60.197.27:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414768019.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 89
+103.91.129.201:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414768019.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf1cb50>, 'Connection to 103.91.129.201 timed out. (connect timeout=30)'))
+ip_lst: 90
+218.61.252.86:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414768019.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 502 Proxy Error',)))
+ip_lst: 91
+36.66.174.161:8080
+https://www.zhipin.com/job_detail/1414768019.html
+资深Python开发
+https://www.zhipin.com/job_detail/1414737556.html
+43.228.130.216:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414737556.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf1c290>, 'Connection to 43.228.130.216 timed out. (connect timeout=30)'))
+ip_lst: 92
+186.46.90.50:53281
+https://www.zhipin.com/job_detail/1414737556.html
+python高级工程师
+https://www.zhipin.com/job_detail/1415033921.html
+124.41.213.92:53005
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 93
+45.76.91.243:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 94
+47.89.5.247:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 95
+116.197.131.116:88
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab44e210>, 'Connection to 116.197.131.116 timed out. (connect timeout=30)'))
+ip_lst: 96
+45.63.119.250:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 97
+180.210.204.53:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 98
+219.150.124.124:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 99
+120.198.231.228:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 100
+182.253.26.246:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1415033921.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe8ef90>, 'Connection to 182.253.26.246 timed out. (connect timeout=30)'))
+ip_lst: 101
+False
+https://www.zhipin.com/job_detail/1414800621.html
+27.109.116.96:53281
+https://www.zhipin.com/job_detail/1414800621.html
+Python
+https://www.zhipin.com/job_detail/1414738625.html
+188.166.232.174:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 102
+122.226.163.4:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 103
+122.142.50.53:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 104
+61.240.150.244:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 105
+171.98.66.255:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 503 Service Unavailable',)))
+ip_lst: 106
+157.255.129.16:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 107
+177.183.149.199:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab502150>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 108
+45.32.158.201:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 109
+124.239.180.62:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414738625.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 110
+False
+https://www.zhipin.com/job_detail/1414915067.html
+189.27.57.76:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414915067.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab6227d0>, 'Connection to 189.27.57.76 timed out. (connect timeout=30)'))
+ip_lst: 111
+104.236.153.45:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414915067.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 112
+13.82.151.131:3128
+https://www.zhipin.com/job_detail/1414915067.html
+Python工程师
+https://www.zhipin.com/job_detail/1414622206.html
+165.227.188.89:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414622206.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab29b510>, 'Connection to 165.227.188.89 timed out. (connect timeout=30)'))
+ip_lst: 113
+123.1.194.90:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414622206.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 114
+191.33.88.252:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 115
+186.109.91.37:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414622206.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 116
+188.0.168.205:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414622206.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 117
+181.47.9.239:8080
+https://www.zhipin.com/job_detail/1414622206.html
+Python
+https://www.zhipin.com/job_detail/1414698677.html
+123.1.194.77:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698677.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 118
+123.108.201.173:53281
+https://www.zhipin.com/job_detail/1414698677.html
+python研发工程师（中级以上）
+https://www.zhipin.com/job_detail/1414748413.html
+120.204.74.13:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 119
+152.252.123.109:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabafccd0>, 'Connection to 152.252.123.109 timed out. (connect timeout=30)'))
+ip_lst: 120
+119.188.95.131:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 121
+185.163.195.167:8808
+https://www.zhipin.com/job_detail/1414748413.html
+python音频数据工程师
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=4&ka=page-5
+154.73.44.209:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=4&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab778650>, 'Connection to 154.73.44.209 timed out. (connect timeout=30)'))
+ip_lst: 122
+60.211.204.236:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=4&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 123
+184.82.128.210:8080
+https://www.zhipin.com/job_detail/1414622206.html
+60.22.179.8:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414622206.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac130f10>, 'Connection to 60.22.179.8 timed out. (connect timeout=30)'))
+ip_lst: 124
+52.193.32.211:80
+https://www.zhipin.com/job_detail/1414622206.html
+None
+https://www.zhipin.com/job_detail/1414698677.html
+123.1.194.41:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698677.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 125
+119.147.153.105:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698677.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 126
+183.240.39.26:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698677.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 127
+177.86.153.11:53281
+https://www.zhipin.com/job_detail/1414698677.html
+None
+https://www.zhipin.com/job_detail/1414748413.html
+52.178.197.34:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 128
+60.211.204.235:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 129
+115.249.22.97:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac352c10>, 'Connection to 115.249.22.97 timed out. (connect timeout=30)'))
+ip_lst: 130
+123.1.194.205:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414748413.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 131
+186.225.39.251:8080
+https://www.zhipin.com/job_detail/1414748413.html
+None
+https://www.zhipin.com/job_detail/1414941597.html
+157.255.128.130:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414941597.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 132
+191.199.249.166:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414941597.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 133
+124.239.232.236:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414941597.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 134
+37.17.38.196:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414941597.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac211b50>, 'Connection to 37.17.38.196 timed out. (connect timeout=30)'))
+ip_lst: 135
+185.32.62.84:8081
+https://www.zhipin.com/job_detail/1414941597.html
+python工程师
+https://www.zhipin.com/job_detail/1414791733.html
+5.228.156.140:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414791733.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 136
+177.6.144.74:8080
+https://www.zhipin.com/job_detail/1414791733.html
+Python虚拟化攻防平台开发
+https://www.zhipin.com/job_detail/1414654795.html
+115.29.187.50:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414654795.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 137
+177.11.11.62:3128
+https://www.zhipin.com/job_detail/1414654795.html
+Python高级研发工程师
+https://www.zhipin.com/job_detail/1414553780.html
+200.116.227.99:53281
+https://www.zhipin.com/job_detail/1414553780.html
+高级python开发
+https://www.zhipin.com/job_detail/1414926670.html
+176.237.161.144:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414926670.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5596d0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 138
+190.107.30.146:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414926670.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 139
+23.23.175.246:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414926670.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 140
+110.77.208.186:52335
+https://www.zhipin.com/job_detail/1414926670.html
+Python高级开发工程师
+https://www.zhipin.com/job_detail/1414738561.html
+163.172.220.221:8888
+https://www.zhipin.com/job_detail/1414738561.html
+Python
+https://www.zhipin.com/job_detail/1414933538.html
+59.148.251.176:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414933538.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 502 Proxy Error',)))
+ip_lst: 141
+117.27.139.133:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414933538.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 142
+177.37.164.228:3128
+https://www.zhipin.com/job_detail/1414933538.html
+Python
+https://www.zhipin.com/job_detail/1414930408.html
+157.255.129.17:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414930408.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 143
+5.228.136.172:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414930408.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 144
+187.44.182.194:8080
+https://www.zhipin.com/job_detail/1414930408.html
+Python高级讲师
+https://www.zhipin.com/job_detail/1414636272.html
+182.162.143.90:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414636272.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 502 Proxy Error',)))
+ip_lst: 145
+124.12.49.1:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414636272.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 146
+221.1.204.176:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414636272.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 147
+187.53.60.98:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414636272.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab4467d0>, 'Connection to 187.53.60.98 timed out. (connect timeout=30)'))
+ip_lst: 148
+182.253.53.19:8080
+https://www.zhipin.com/job_detail/1414636272.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414592316.html
+183.240.39.31:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414592316.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 149
+111.203.133.98:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414592316.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 150
+182.253.114.34:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414592316.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabcfcc50>, 'Connection to 182.253.114.34 timed out. (connect timeout=30)'))
+ip_lst: 151
+59.80.30.242:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414592316.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 152
+107.174.26.40:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414592316.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 153
+27.72.62.118:8888
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 154
+186.88.163.42:8080
+https://www.zhipin.com/job_detail/1414592316.html
+Python 后台工程师
+https://www.zhipin.com/job_detail/1414604003.html
+223.96.95.229:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 155
+138.185.247.127:52335
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab9de310>: Failed to establish a new connection: [Errno 113] No route to host',)))
+ip_lst: 156
+123.1.194.81:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 157
+210.38.1.142:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Access Denied',)))
+ip_lst: 158
+113.200.251.12:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 159
+103.28.192.190:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414604003.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 160
+186.0.195.195:3128
+https://www.zhipin.com/job_detail/1414604003.html
+Python
+https://www.zhipin.com/job_detail/1414611812.html
+187.4.206.10:3128
+https://www.zhipin.com/job_detail/1414611812.html
+Python开发工程师
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=5&ka=page-5
+202.154.27.206:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=5&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac1432d0>: Failed to establish a new connection: [Errno 101] Network is unreachable',)))
+ip_lst: 161
+45.77.52.190:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=5&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 162
+200.223.197.74:8080
+https://www.zhipin.com/job_detail/1414934969.html
+110.77.215.94:52335
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414934969.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac143e50>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 163
+97.72.93.134:87
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414934969.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe7ec10>, 'Connection to 97.72.93.134 timed out. (connect timeout=30)'))
+ip_lst: 164
+177.11.11.62:3128
+https://www.zhipin.com/job_detail/1414934969.html
+Python高级工程师
+https://www.zhipin.com/job_detail/1414893791.html
+116.212.143.178:52305
+https://www.zhipin.com/job_detail/1414893791.html
+Python
+https://www.zhipin.com/job_detail/1414885989.html
+78.157.225.146:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414885989.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabcb9cd0>, 'Connection to 78.157.225.146 timed out. (connect timeout=30)'))
+ip_lst: 165
+14.207.75.84:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414885989.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 166
+60.190.224.120:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414885989.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 167
+164.77.124.194:8080
+https://www.zhipin.com/job_detail/1414885989.html
+Python开发工程师(安全类)
+https://www.zhipin.com/job_detail/1414355834.html
+170.0.69.242:65309
+https://www.zhipin.com/job_detail/1414355834.html
+高级python工程师
+https://www.zhipin.com/job_detail/1414453448.html
+5.2.69.109:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 168
+60.169.19.66:9000
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 169
+182.52.236.125:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac1d3810>, 'Connection to 182.52.236.125 timed out. (connect timeout=30)'))
+ip_lst: 170
+61.240.136.137:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 171
+177.189.240.163:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb5bb10>, 'Connection to 177.189.240.163 timed out. (connect timeout=30)'))
+ip_lst: 172
+59.37.132.19:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 173
+119.29.187.191:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 174
+181.112.61.50:65103
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 175
+122.228.84.73:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414453448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 176
+False
+https://www.zhipin.com/job_detail/1414924171.html
+177.91.79.25:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 177
+171.6.18.198:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414924171.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac1d3690>, 'Connection to 171.6.18.198 timed out. (connect timeout=30)'))
+ip_lst: 178
+112.17.39.136:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414924171.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 179
+13.90.204.190:1080
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 180
+59.37.132.29:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414924171.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 181
+109.188.81.101:8080
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 182
+89.236.17.106:3128
+https://www.zhipin.com/job_detail/1414924171.html
+python外企工程师
+https://www.zhipin.com/job_detail/1414931365.html
+122.228.253.55:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414931365.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 183
+101.254.185.156:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414931365.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac4be190>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 184
+123.1.194.212:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414931365.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 185
+157.255.128.162:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414931365.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 186
+187.72.158.56:8080
+https://www.zhipin.com/job_detail/1414931365.html
+Python实习生
+https://www.zhipin.com/job_detail/1414986129.html
+106.51.65.60:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414986129.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf7f210>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 187
+190.207.197.49:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414986129.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 188
+190.52.169.233:8080
+https://www.zhipin.com/job_detail/1414986129.html
+python高级开发工程师
+https://www.zhipin.com/job_detail/1414538052.html
+198.50.200.58:8080
+https://www.zhipin.com/job_detail/1414538052.html
+python高级开发工程师
+https://www.zhipin.com/job_detail/1415033225.html
+118.97.191.205:8080
+https://www.zhipin.com/job_detail/1415033225.html
+Python实习生
+https://www.zhipin.com/job_detail/1414894274.html
+45.32.159.130:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 189
+183.240.39.24:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 190
+175.111.7.166:52335
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 191
+157.255.128.153:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 192
+47.89.5.44:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 193
+182.23.49.19:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 194
+94.231.113.83:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdaba99250>, 'Connection to 94.231.113.83 timed out. (connect timeout=30)'))
+ip_lst: 195
+123.1.194.118:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414894274.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 196
+220.143.201.11:3128
+https://www.zhipin.com/job_detail/1414894274.html
+H5/python老师
+https://www.zhipin.com/job_detail/1414422497.html
+139.255.57.32:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414422497.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 197
+123.1.194.218:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414422497.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 198
+176.106.145.122:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414422497.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 199
+103.3.46.60:3128
+https://www.zhipin.com/job_detail/1414422497.html
+资深python研发工程师
+https://www.zhipin.com/job_detail/1414812057.html
+153.149.155.51:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 200
+79.106.100.183:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 201
+117.131.216.217:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 202
+58.254.172.157:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 203
+101.251.110.229:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 204
+221.1.204.177:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 205
+123.1.194.25:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414812057.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 206
+154.66.108.70:53281
+https://www.zhipin.com/job_detail/1414812057.html
+Python
+https://www.zhipin.com/job_detail/1414857555.html
+139.59.114.21:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414857555.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabdf8290>, 'Connection to 139.59.114.21 timed out. (connect timeout=30)'))
+ip_lst: 207
+140.249.4.2:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414857555.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 208
+125.24.214.34:3128
+https://www.zhipin.com/job_detail/1414857555.html
+Python研发工程师
+https://www.zhipin.com/job_detail/1414704954.html
+139.59.2.223:8888
+https://www.zhipin.com/job_detail/1414704954.html
+Python教研工程师
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=6&ka=page-5
+185.190.40.85:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=6&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabdd5f10>, 'Connection to 185.190.40.85 timed out. (connect timeout=30)'))
+ip_lst: 209
+188.165.240.92:3128
+https://www.zhipin.com/job_detail/1414901074.html
+183.240.39.54:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414901074.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 210
+187.60.47.46:8080
+https://www.zhipin.com/job_detail/1414901074.html
+后台高级开发工程师（python／java／go）
+https://www.zhipin.com/job_detail/1414251271.html
+183.131.64.69:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414251271.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 211
+122.224.152.154:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414251271.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 212
+190.64.160.101:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414251271.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 213
+203.146.217.107:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414251271.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 214
+109.194.226.203:53281
+https://www.zhipin.com/job_detail/1414251271.html
+Python
+https://www.zhipin.com/job_detail/1414338691.html
+124.95.176.215:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414338691.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 215
+178.162.70.168:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414338691.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 216
+181.47.180.3:8080
+https://www.zhipin.com/job_detail/1414338691.html
+Python高级研发工程师
+https://www.zhipin.com/job_detail/1414763853.html
+89.32.179.150:3128
+https://www.zhipin.com/job_detail/1414763853.html
+Python工程师
+https://www.zhipin.com/job_detail/1413878346.html
+213.174.123.194:3128
+https://www.zhipin.com/job_detail/1413878346.html
+python
+https://www.zhipin.com/job_detail/1413924087.html
+177.69.195.4:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413924087.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe124d0>, 'Connection to 177.69.195.4 timed out. (connect timeout=30)'))
+ip_lst: 217
+190.0.0.174:8080
+https://www.zhipin.com/job_detail/1413924087.html
+python开发工程师
+https://www.zhipin.com/job_detail/1414025928.html
+91.121.162.173:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 218
+125.165.53.88:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac0ca110>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 219
+113.31.88.75:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 220
+157.255.128.152:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 221
+187.71.252.104:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 222
+112.250.65.222:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac0eba10>, 'Connection to 112.250.65.222 timed out. (connect timeout=30)'))
+ip_lst: 223
+187.69.120.151:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac0ebf10>, 'Connection to 187.69.120.151 timed out. (connect timeout=30)'))
+ip_lst: 224
+47.89.5.254:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414025928.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 225
+177.182.219.78:53281
+https://www.zhipin.com/job_detail/1414025928.html
+游戏后端Python工程师
+https://www.zhipin.com/job_detail/1414726858.html
+115.61.109.221:8118
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414726858.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab8c1690>, 'Connection to 115.61.109.221 timed out. (connect timeout=30)'))
+ip_lst: 226
+45.5.45.38:53281
+https://www.zhipin.com/job_detail/1414726858.html
+高级Python开发工程师
+https://www.zhipin.com/job_detail/1414317727.html
+221.1.204.181:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 227
+120.198.231.134:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 228
+42.81.104.10:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 229
+46.229.139.247:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 230
+36.81.90.48:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab502d90>, 'Connection to 36.81.90.48 timed out. (connect timeout=30)'))
+ip_lst: 231
+219.150.99.194:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 232
+190.123.26.90:62225
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
+ip_lst: 233
+221.12.104.203:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 502 Proxy Error',)))
+ip_lst: 234
+185.24.21.60:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414317727.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab45f810>, 'Connection to 185.24.21.60 timed out. (connect timeout=30)'))
+ip_lst: 235
+False
+https://www.zhipin.com/job_detail/1413793824.html
+88.99.134.46:8080
+https://www.zhipin.com/job_detail/1413793824.html
+Python高级开发工程师
+https://www.zhipin.com/job_detail/1414688223.html
+51.254.191.239:8080
+https://www.zhipin.com/job_detail/1414688223.html
+Python课程研究员
+https://www.zhipin.com/job_detail/1414851744.html
+180.241.165.65:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414851744.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab953090>, 'Connection to 180.241.165.65 timed out. (connect timeout=30)'))
+ip_lst: 236
+36.66.124.201:65103
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414851744.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb5bad0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 237
+198.23.172.50:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414851744.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 238
+182.160.122.182:8080
+https://www.zhipin.com/job_detail/1414851744.html
+运维开发工程师【Linux+Python@北京CBD】
+https://www.zhipin.com/job_detail/1414689441.html
+183.240.39.50:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414689441.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 239
+138.122.207.44:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414689441.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5d0c10>, 'Connection to 138.122.207.44 timed out. (connect timeout=30)'))
+ip_lst: 240
+200.122.211.22:8080
+https://www.zhipin.com/job_detail/1414689441.html
+python后端
+https://www.zhipin.com/job_detail/1414740930.html
+46.147.246.166:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414740930.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 241
+123.1.194.113:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414740930.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 242
+119.18.159.204:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414740930.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 243
+180.241.222.69:3128
+https://www.zhipin.com/job_detail/1414740930.html
+Python工程师
+https://www.zhipin.com/job_detail/1413871864.html
+59.37.132.21:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 244
+84.11.164.74:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
+ip_lst: 245
+117.177.245.254:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 246
+47.89.5.248:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 247
+36.248.24.163:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 248
+121.200.61.35:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413871864.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab6bd090>, 'Connection to 121.200.61.35 timed out. (connect timeout=30)'))
+ip_lst: 249
+187.110.212.30:53281
+https://www.zhipin.com/job_detail/1413871864.html
+Python后端工程师
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=7&ka=page-5
+181.225.78.141:53281
+https://www.zhipin.com/job_detail/1414416453.html
+112.30.128.100:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414416453.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 250
+202.150.147.22:53281
+('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+ip_lst: 251
+109.121.167.229:53281
+https://www.zhipin.com/job_detail/1414416453.html
+Python
+https://www.zhipin.com/job_detail/1413990659.html
+115.231.144.50:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413990659.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 252
+103.74.237.98:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413990659.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 253
+94.190.19.11:53281
+https://www.zhipin.com/job_detail/1413990659.html
+Python
+https://www.zhipin.com/job_detail/1414769506.html
+206.82.22.72:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414769506.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 254
+202.142.83.179:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414769506.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab668550>, 'Connection to 202.142.83.179 timed out. (connect timeout=30)'))
+ip_lst: 255
+181.29.187.115:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414769506.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab668290>, 'Connection to 181.29.187.115 timed out. (connect timeout=30)'))
+ip_lst: 256
+45.251.57.194:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414769506.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 257
+166.130.51.107:52305
+https://www.zhipin.com/job_detail/1414769506.html
+Python后端开发工程师
+https://www.zhipin.com/job_detail/1414764212.html
+183.60.177.149:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 258
+182.253.37.225:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5de290>, 'Connection to 182.253.37.225 timed out. (connect timeout=30)'))
+ip_lst: 259
+213.172.156.144:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 260
+72.169.140.182:87
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 514 Web Acceleration Client Error (514) - Proxied HTTPS Request Not Supported',)))
+ip_lst: 261
+45.77.66.75:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 262
+80.83.20.14:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 263
+45.77.67.117:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 264
+184.95.48.102:3128
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 265
+50.204.46.77:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414764212.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 266
+False
+https://www.zhipin.com/job_detail/1414923649.html
+191.37.225.251:52305
+https://www.zhipin.com/job_detail/1414923649.html
+python工程师（后端方向）
+https://www.zhipin.com/job_detail/1413852730.html
+121.31.60.206:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413852730.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 267
+157.255.129.11:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413852730.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 268
+195.34.238.52:65301
+https://www.zhipin.com/job_detail/1413852730.html
+Python
+https://www.zhipin.com/job_detail/1413641595.html
+156.54.184.204:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413641595.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 269
+117.176.62.148:3128
+https://www.zhipin.com/job_detail/1413641595.html
+高级Python工程师
+https://www.zhipin.com/job_detail/1413783311.html
+116.10.189.21:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413783311.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 270
+123.134.94.36:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413783311.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 271
+122.228.84.165:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413783311.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 272
+190.152.149.114:8080
+https://www.zhipin.com/job_detail/1413783311.html
+Python
+https://www.zhipin.com/job_detail/1412708726.html
+181.211.32.66:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412708726.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab27f190>, 'Connection to 181.211.32.66 timed out. (connect timeout=30)'))
+ip_lst: 273
+166.159.90.56:53281
+https://www.zhipin.com/job_detail/1412708726.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414788296.html
+123.1.194.136:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414788296.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 274
+103.63.135.143:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414788296.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 275
+61.240.136.80:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414788296.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 276
+81.32.192.181:3128
+https://www.zhipin.com/job_detail/1414788296.html
+Python
+https://www.zhipin.com/job_detail/1414676111.html
+107.174.26.39:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+ip_lst: 277
+187.49.83.1:6006
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac286450>, 'Connection to 187.49.83.1 timed out. (connect timeout=30)'))
+ip_lst: 278
+61.155.137.219:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 279
+200.84.161.230:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 280
+186.193.30.101:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac2991d0>, 'Connection to 186.193.30.101 timed out. (connect timeout=30)'))
+ip_lst: 281
+212.161.27.94:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 282
+121.43.178.58:3128
+46.242.61.89:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 283
+109.120.199.27:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414676111.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac29f690>, 'Connection to 109.120.199.27 timed out. (connect timeout=30)'))
+ip_lst: 284
+False
+https://www.zhipin.com/job_detail/1414719129.html
+166.130.51.107:52305
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414719129.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac286b50>, 'Connection to 166.130.51.107 timed out. (connect timeout=30)'))
+ip_lst: 285
+187.95.30.50:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 286
+219.82.99.3:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414719129.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 501 Not Implemented',)))
+ip_lst: 287
+111.13.7.120:80
+https://www.zhipin.com/job_detail/1414719129.html
+Python
+https://www.zhipin.com/job_detail/1414633754.html
+112.253.22.161:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414633754.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 288
+186.0.195.195:3128
+https://www.zhipin.com/job_detail/1414633754.html
+服务端开发工程师(Python)
+https://www.zhipin.com/job_detail/1414802081.html
+36.73.113.209:3128
+https://www.zhipin.com/job_detail/1414802081.html
+高级Python开发工程师
+https://www.zhipin.com/job_detail/1412480661.html
+58.254.172.145:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 289
+131.255.93.98:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabc2bf50>, 'Connection to 131.255.93.98 timed out. (connect timeout=30)'))
+ip_lst: 290
+103.206.255.58:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabc15590>, 'Connection to 103.206.255.58 timed out. (connect timeout=30)'))
+ip_lst: 291
+60.211.204.227:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 292
+112.35.29.53:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 293
+174.32.125.245:87
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac2866d0>, 'Connection to 174.32.125.245 timed out. (connect timeout=30)'))
+ip_lst: 294
+183.203.19.13:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 295
+187.12.74.198:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 296
+180.120.212.225:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412480661.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdaba03f50>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 297
+False
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=8&ka=page-5
+123.1.194.155:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=8&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 298
+175.100.19.243:53281
+https://www.zhipin.com/job_detail/1413380199.html
+190.24.145.123:8080
+https://www.zhipin.com/job_detail/1413380199.html
+Python
+https://www.zhipin.com/job_detail/1414810074.html
+178.205.101.67:3129
+https://www.zhipin.com/job_detail/1414810074.html
+Python研发工程师
+https://www.zhipin.com/job_detail/1414558722.html
+176.235.99.166:80
+https://www.zhipin.com/job_detail/1414558722.html
+python
+https://www.zhipin.com/job_detail/1414876957.html
+118.70.12.171:53281
+https://www.zhipin.com/job_detail/1414876957.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414612903.html
+178.213.145.24:8080
+177.129.185.26:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414612903.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabd0c350>, 'Connection to 177.129.185.26 timed out. (connect timeout=30)'))
+ip_lst: 299
+180.183.215.204:8080
+https://www.zhipin.com/job_detail/1414612903.html
+python工程师
+https://www.zhipin.com/job_detail/1414189574.html
+198.50.138.166:8888
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414189574.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb7bc10>, 'Connection to 198.50.138.166 timed out. (connect timeout=30)'))
+ip_lst: 300
+168.205.250.241:53281
+https://www.zhipin.com/job_detail/1414189574.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414785385.html
+203.162.13.33:3128
+https://www.zhipin.com/job_detail/1414785385.html
+Python高级研发工程师
+https://www.zhipin.com/job_detail/1413934869.html
+141.196.75.205:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413934869.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabd0c6d0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 301
+177.10.212.70:3128
+https://www.zhipin.com/job_detail/1413934869.html
+Python培训讲师
+https://www.zhipin.com/job_detail/1413839218.html
+211.100.49.38:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413839218.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 302
+58.254.172.153:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413839218.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 303
+13.124.191.198:3128
+https://www.zhipin.com/job_detail/1413839218.html
+Python AI研发工程师 实习
+https://www.zhipin.com/job_detail/1414758082.html
+170.82.6.140:8080
+https://www.zhipin.com/job_detail/1414758082.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1413720941.html
+176.62.77.212:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413720941.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb7b6d0>, 'Connection to 176.62.77.212 timed out. (connect timeout=30)'))
+ip_lst: 304
+210.38.1.138:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413720941.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Access Denied',)))
+ip_lst: 305
+157.255.128.133:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413720941.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 306
+190.74.71.35:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413720941.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabfd37d0>, 'Connection to 190.74.71.35 timed out. (connect timeout=30)'))
+ip_lst: 307
+170.0.69.242:65309
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413720941.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac42fd50>, 'Connection to 170.0.69.242 timed out. (connect timeout=30)'))
+ip_lst: 308
+180.250.5.35:8080
+https://www.zhipin.com/job_detail/1413720941.html
+python爬虫工程师--金融科技方向
+https://www.zhipin.com/job_detail/1412858852.html
+120.192.64.141:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412858852.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 309
+190.131.203.90:3128
+https://www.zhipin.com/job_detail/1412858852.html
+Linux C++/Python高级研发工程师
+https://www.zhipin.com/job_detail/1413145827.html
+221.1.204.175:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413145827.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 310
+31.145.111.12:65103
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413145827.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac398d50>, 'Connection to 31.145.111.12 timed out. (connect timeout=30)'))
+ip_lst: 311
+212.90.167.90:52335
+https://www.zhipin.com/job_detail/1413145827.html
+数据挖掘工程师(R或Python）
+https://www.zhipin.com/job_detail/1414634000.html
+123.1.194.97:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414634000.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 312
+180.251.81.234:52305
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414634000.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac52a550>, 'Connection to 180.251.81.234 timed out. (connect timeout=30)'))
+ip_lst: 313
+183.60.197.28:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414634000.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 314
+171.221.3.222:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414634000.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 315
+47.52.68.4:3128
+https://www.zhipin.com/job_detail/1414634000.html
+Python高级工程师
+https://www.zhipin.com/job_detail/1412208586.html
+182.253.50.68:52335
+https://www.zhipin.com/job_detail/1412208586.html
+后端开发工程师(Python)
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=9&ka=page-5
+125.98.131.26:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=9&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 316
+61.240.137.201:808
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=9&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 317
+39.46.150.182:8080
+https://www.zhipin.com/job_detail/1413058658.html
+39.108.64.155:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413058658.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 318
+95.182.109.230:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413058658.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf4ec10>, 'Connection to 95.182.109.230 timed out. (connect timeout=30)'))
+ip_lst: 319
+94.19.39.81:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413058658.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf4e0d0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 320
+45.77.64.221:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413058658.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 321
+202.137.25.53:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413058658.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf4f050>, 'Connection to 202.137.25.53 timed out. (connect timeout=30)'))
+ip_lst: 322
+176.111.82.178:8080
+https://www.zhipin.com/job_detail/1413058658.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414707820.html
+175.206.164.130:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414707820.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 323
+39.42.248.187:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414707820.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf53f50>, 'Connection to 39.42.248.187 timed out. (connect timeout=30)'))
+ip_lst: 324
+181.40.93.118:8080
+https://www.zhipin.com/job_detail/1414707820.html
+PYTHON爬虫工程师
+https://www.zhipin.com/job_detail/1414661699.html
+189.8.88.125:65301
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414661699.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab993450>, 'Connection to 189.8.88.125 timed out. (connect timeout=30)'))
+ip_lst: 325
+220.181.136.21:1080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414661699.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 326
+182.253.176.68:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414661699.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab917050>, 'Connection to 182.253.176.68 timed out. (connect timeout=30)'))
+ip_lst: 327
+59.173.16.50:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414661699.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 328
+109.185.139.177:52335
+https://www.zhipin.com/job_detail/1414661699.html
+高级Python工程师
+https://www.zhipin.com/job_detail/1414506471.html
+150.107.205.81:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414506471.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 329
+103.10.0.34:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414506471.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 330
+42.81.104.13:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414506471.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 331
+123.1.194.161:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414506471.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 332
+103.35.171.97:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414506471.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac398990>, 'Connection to 103.35.171.97 timed out. (connect timeout=30)'))
+ip_lst: 333
+193.19.132.1:8080
+https://www.zhipin.com/job_detail/1414506471.html
+Python爬虫工程师
+https://www.zhipin.com/job_detail/1414465538.html
+47.89.5.244:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414465538.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 334
+144.217.215.247:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414465538.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 335
+153.128.40.96:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414465538.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 336
+177.84.192.254:8080
+https://www.zhipin.com/job_detail/1414465538.html
+Python服务器开发
+https://www.zhipin.com/job_detail/1414778651.html
+61.4.184.180:3128
+187.1.57.1:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 337
+221.1.204.179:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 338
+164.77.124.194:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 339
+221.204.11.8:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 340
+123.1.194.125:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 341
+187.60.47.122:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 342
+183.131.64.78:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 343
+139.59.231.198:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414778651.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 344
+False
+https://www.zhipin.com/job_detail/1414359363.html
+66.175.83.156:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414359363.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab6aa450>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 345
+108.61.171.230:3128
+https://www.zhipin.com/job_detail/1414359363.html
+Python研发工程师
+https://www.zhipin.com/job_detail/1414709932.html
+168.227.169.18:8080
+https://www.zhipin.com/job_detail/1414709932.html
+高级Python开发工程师
+https://www.zhipin.com/job_detail/1412526653.html
+45.77.66.161:3128
+https://www.zhipin.com/job_detail/1412526653.html
+Python
+https://www.zhipin.com/job_detail/1410993013.html
+185.26.34.120:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe91bd0>, 'Connection to 185.26.34.120 timed out. (connect timeout=30)'))
+ip_lst: 346
+202.79.19.226:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabe910d0>, 'Connection to 202.79.19.226 timed out. (connect timeout=30)'))
+ip_lst: 347
+186.14.143.58:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabea0d50>, 'Connection to 186.14.143.58 timed out. (connect timeout=30)'))
+ip_lst: 348
+180.235.65.12:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 349
+120.41.38.101:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 350
+45.32.155.219:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 351
+103.28.224.59:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 352
+36.73.8.125:8080
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 353
+94.245.163.122:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410993013.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab80dbd0>, 'Connection to 94.245.163.122 timed out. (connect timeout=30)'))
+ip_lst: 354
+False
+https://www.zhipin.com/job_detail/1412487398.html
+123.30.236.222:6969
+https://www.zhipin.com/job_detail/1412487398.html
+Python高级开发/架构工程师
+https://www.zhipin.com/job_detail/1414583877.html
+59.37.132.16:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414583877.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 355
+45.76.94.143:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414583877.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 356
+186.101.136.10:65205
+https://www.zhipin.com/job_detail/1414583877.html
+Python
+https://www.zhipin.com/job_detail/1413815333.html
+120.92.201.135:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413815333.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 357
+65.169.6.152:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413815333.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 358
+183.89.19.198:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413815333.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabca71d0>, 'Connection to 183.89.19.198 timed out. (connect timeout=30)'))
+ip_lst: 359
+82.223.70.23:80
+https://www.zhipin.com/job_detail/1413815333.html
+Python爬虫工程师
+https://www.zhipin.com/job_detail/1414408883.html
+111.68.115.22:53281
+https://www.zhipin.com/job_detail/1414408883.html
+Python工程师
+https://www.zhipin.com/job_detail/1413216690.html
+54.179.166.238:443
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413216690.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 407 Proxy Authentication Required',)))
+ip_lst: 360
+177.234.178.142:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413216690.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabae5150>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 361
+182.52.137.203:8080
+https://www.zhipin.com/job_detail/1413216690.html
+Python开发工程师
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=10&ka=page-5
+128.199.74.233:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=10&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 362
+190.1.137.102:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=10&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 363
+182.253.37.204:3128
+https://www.zhipin.com/job_detail/1414601647.html
+181.40.78.174:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414601647.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 364
+185.107.143.99:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414601647.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 365
+108.179.54.171:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414601647.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 366
+178.49.136.82:8080
+https://www.zhipin.com/job_detail/1414601647.html
+python开发工程师
+https://www.zhipin.com/job_detail/1411393411.html
+112.140.184.139:3129
+https://www.zhipin.com/job_detail/1411393411.html
+Python系统工程师
+https://www.zhipin.com/job_detail/1414364905.html
+181.129.55.234:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414364905.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac5e8150>, 'Connection to 181.129.55.234 timed out. (connect timeout=30)'))
+ip_lst: 367
+201.184.250.170:3128
+https://www.zhipin.com/job_detail/1414364905.html
+python工程师
+https://www.zhipin.com/job_detail/1414568056.html
+52.163.119.153:80
+https://www.zhipin.com/job_detail/1414568056.html
+Python工程师 实习生
+https://www.zhipin.com/job_detail/1414765392.html
+183.131.64.68:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765392.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 368
+186.101.33.146:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765392.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 369
+116.211.88.90:3128
+https://www.zhipin.com/job_detail/1414765392.html
+Python开发-小米电视
+https://www.zhipin.com/job_detail/1414241990.html
+103.215.211.98:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 370
+197.51.250.174:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabf13f10>, 'Connection to 197.51.250.174 timed out. (connect timeout=30)'))
+ip_lst: 371
+188.225.184.156:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab2b9d50>, 'Connection to 188.225.184.156 timed out. (connect timeout=30)'))
+ip_lst: 372
+180.183.249.214:8080
+183.131.12.21:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 373
+101.251.110.235:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 374
+125.92.34.248:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabd6ed90>, 'Connection to 125.92.34.248 timed out. (connect timeout=30)'))
+ip_lst: 375
+186.250.96.70:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 376
+116.62.50.112:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414241990.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 377
+False
+https://www.zhipin.com/job_detail/1414765341.html
+103.40.226.11:8080
+https://www.zhipin.com/job_detail/1414765341.html
+Python开发-锁屏画报
+https://www.zhipin.com/job_detail/1414384950.html
+128.75.161.176:9999
+https://www.zhipin.com/job_detail/1414384950.html
+Python【高德】
+https://www.zhipin.com/job_detail/1414444023.html
+58.254.172.163:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414444023.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 378
+124.224.239.186:80
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 379
+113.6.246.213:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414444023.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 380
+132.255.73.243:8080
+https://www.zhipin.com/job_detail/1414444023.html
+Python工程师
+https://www.zhipin.com/job_detail/1414821998.html
+123.58.17.34:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414821998.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 381
+180.183.215.204:8080
+https://www.zhipin.com/job_detail/1414821998.html
+Python 培训讲师
+https://www.zhipin.com/job_detail/1414734982.html
+182.93.218.30:8080
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 382
+13.124.191.198:3128
+https://www.zhipin.com/job_detail/1414734982.html
+python高级工程师
+https://www.zhipin.com/job_detail/1414699222.html
+183.88.157.190:8080
+https://www.zhipin.com/job_detail/1414699222.html
+Python高级开发工程师
+https://www.zhipin.com/job_detail/1414100740.html
+109.254.6.40:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414100740.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 383
+223.207.25.24:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414100740.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 384
+220.181.77.82:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414100740.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 385
+181.189.235.11:8080
+125.141.73.82:3128
+https://www.zhipin.com/job_detail/1414100740.html
+Python技术讲师
+https://www.zhipin.com/job_detail/1411924189.html
+47.52.68.4:3128
+https://www.zhipin.com/job_detail/1411924189.html
+python服务器开发工程师
+https://www.zhipin.com/job_detail/1413296906.html
+47.89.5.100:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 386
+59.47.6.243:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 387
+117.58.241.66:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab473050>, 'Connection to 117.58.241.66 timed out. (connect timeout=30)'))
+ip_lst: 388
+117.102.229.118:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab473390>, 'Connection to 117.102.229.118 timed out. (connect timeout=30)'))
+ip_lst: 389
+101.255.62.30:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab47e4d0>, 'Connection to 101.255.62.30 timed out. (connect timeout=30)'))
+ip_lst: 390
+182.92.242.11:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 391
+111.11.31.131:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 392
+94.228.251.37:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab44d2d0>, 'Connection to 94.228.251.37 timed out. (connect timeout=30)'))
+ip_lst: 393
+124.163.207.67:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413296906.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 394
+False
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=11&ka=page-5
+182.16.175.9:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=11&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 395
+139.196.229.182:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=11&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 396
+112.26.58.27:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=11&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 397
+49.49.91.180:3128
+https://www.zhipin.com/job_detail/1413416885.html
+154.73.159.138:53281
+https://www.zhipin.com/job_detail/1413416885.html
+Linux C/Python 开发工程师
+https://www.zhipin.com/job_detail/1414516108.html
+176.115.250.2:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516108.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac560290>, 'Connection to 176.115.250.2 timed out. (connect timeout=30)'))
+ip_lst: 398
+58.254.172.161:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516108.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 399
+189.198.26.77:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516108.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 400
+202.44.230.222:8080
+https://www.zhipin.com/job_detail/1414516108.html
+（R、Python）讲师
+https://www.zhipin.com/job_detail/1414765956.html
+186.0.195.194:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765956.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 401
+213.4.45.94:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765956.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdabb93250>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 402
+79.106.100.166:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765956.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 403
+59.37.132.50:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414765956.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 404
+187.60.47.46:8080
+https://www.zhipin.com/job_detail/1414765956.html
+Python爬虫工程师
+https://www.zhipin.com/job_detail/1414333132.html
+145.239.137.83:3128
+https://www.zhipin.com/job_detail/1414333132.html
+Python工程师
+https://www.zhipin.com/job_detail/1413797106.html
+118.97.87.186:8080
+https://www.zhipin.com/job_detail/1413797106.html
+Python研发工程师
+https://www.zhipin.com/job_detail/1414689925.html
+180.183.249.214:8080
+84.241.4.195:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414689925.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 405
+186.91.234.169:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414689925.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 406
+36.78.54.42:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414689925.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab5e4210>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 407
+167.249.181.89:3128
+https://www.zhipin.com/job_detail/1414689925.html
+python后端
+https://www.zhipin.com/job_detail/1414698590.html
+31.173.97.76:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698590.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 408
+208.70.36.120:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698590.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 409
+45.77.53.39:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414698590.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 410
+105.27.176.154:8080
+https://www.zhipin.com/job_detail/1414698590.html
+PYTHON高级研发工程师
+https://www.zhipin.com/job_detail/1414692712.html
+5.167.83.69:8080
+https://www.zhipin.com/job_detail/1414692712.html
+高级研发工程师（Python）
+https://www.zhipin.com/job_detail/1413641549.html
+190.38.43.139:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413641549.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 411
+152.204.130.62:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 412
+189.80.121.14:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Read timed out.
+ip_lst: 413
+121.40.108.76:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413641549.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac211a10>, 'Connection to 121.40.108.76 timed out. (connect timeout=30)'))
+ip_lst: 414
+182.30.226.130:8080
+https://www.zhipin.com/job_detail/1413641549.html
+中级Python开发工程师
+https://www.zhipin.com/job_detail/1413631096.html
+115.248.28.61:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413631096.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 415
+103.70.144.70:52335
+https://www.zhipin.com/job_detail/1413631096.html
+Python工程师-大数据方向
+https://www.zhipin.com/job_detail/1414874560.html
+58.208.119.121:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414874560.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 416
+122.224.214.2:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414874560.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 417
+104.41.26.75:80
+https://www.zhipin.com/job_detail/1414874560.html
+python爬虫
+https://www.zhipin.com/job_detail/1414479162.html
+168.128.29.75:80
+https://www.zhipin.com/job_detail/1414479162.html
+python web工程师
+https://www.zhipin.com/job_detail/1413811116.html
+188.43.52.196:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413811116.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 418
+124.41.213.106:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413811116.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac03f350>, 'Connection to 124.41.213.106 timed out. (connect timeout=30)'))
+ip_lst: 419
+152.252.92.212:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413811116.html (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac20d910>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+ip_lst: 420
+47.89.22.200:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413811116.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 421
+45.77.156.224:69
+https://www.zhipin.com/job_detail/1413811116.html
+Python高级开发工程师
+https://www.zhipin.com/job_detail/1412463279.html
+58.254.172.154:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412463279.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 422
+109.224.39.75:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412463279.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdaba60290>, 'Connection to 109.224.39.75 timed out. (connect timeout=30)'))
+ip_lst: 423
+150.138.215.43:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412463279.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 424
+107.80.121.100:9999
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412463279.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 425
+140.207.219.195:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412463279.html (Caused by ProxyError('Cannot connect to proxy.', error('Invalid response from tunnel request',)))
+ip_lst: 426
+94.190.19.11:53281
+https://www.zhipin.com/job_detail/1412463279.html
+Python
+https://www.zhipin.com/job_detail/1414516579.html
+60.21.212.209:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516579.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 427
+72.169.146.234:87
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516579.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 428
+181.111.56.248:65205
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414516579.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab9230d0>, 'Connection to 181.111.56.248 timed out. (connect timeout=30)'))
+ip_lst: 429
+181.112.221.182:53281
+https://www.zhipin.com/job_detail/1414516579.html
+后端研发工程师（PHP、python）
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=12&ka=page-5
+187.6.108.234:8080
+('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+ip_lst: 430
+125.162.47.48:8080
+https://www.zhipin.com/job_detail/1410464287.html
+103.59.176.9:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410464287.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac559590>, 'Connection to 103.59.176.9 timed out. (connect timeout=30)'))
+ip_lst: 431
+111.231.68.73:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410464287.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 432
+43.252.11.195:80
+https://www.zhipin.com/job_detail/1410464287.html
+后台开发工程师（Python）
+https://www.zhipin.com/job_detail/1411750150.html
+202.21.114.139:53281
+https://www.zhipin.com/job_detail/1411750150.html
+Python
+https://www.zhipin.com/job_detail/1413683384.html
+36.75.241.160:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413683384.html (Caused by SSLError(SSLError("bad handshake: SysCallError(-1, 'Unexpected EOF')",),))
+ip_lst: 433
+13.113.81.5:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413683384.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac559290>, 'Connection to 13.113.81.5 timed out. (connect timeout=30)'))
+ip_lst: 434
+177.86.160.1:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413683384.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac202d10>, 'Connection to 177.86.160.1 timed out. (connect timeout=30)'))
+ip_lst: 435
+186.1.194.34:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413683384.html (Caused by ProxyError('Cannot connect to proxy.', timeout('select timed out',)))
+ip_lst: 436
+190.206.25.108:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413683384.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac228090>, 'Connection to 190.206.25.108 timed out. (connect timeout=30)'))
+ip_lst: 437
+61.145.48.223:808
+https://www.zhipin.com/job_detail/1413683384.html
+Python
+https://www.zhipin.com/job_detail/1414586500.html
+111.73.156.10:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414586500.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 438
+185.28.249.31:8080
+https://www.zhipin.com/job_detail/1414586500.html
+高级python开发工程师
+https://www.zhipin.com/job_detail/1411910199.html
+112.248.228.13:8888
+https://www.zhipin.com/job_detail/1411910199.html
+Python爬虫
+https://www.zhipin.com/job_detail/1412858734.html
+82.130.196.153:65301
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412858734.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab5551d0>, 'Connection to 82.130.196.153 timed out. (connect timeout=30)'))
+ip_lst: 439
+54.221.54.163:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1412858734.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 440
+47.52.68.4:3128
+https://www.zhipin.com/job_detail/1412858734.html
+Python
+https://www.zhipin.com/job_detail/1414301215.html
+52.166.145.45:80
+https://www.zhipin.com/job_detail/1414301215.html
+Python学科总监
+https://www.zhipin.com/job_detail/1414717222.html
+176.122.251.56:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414717222.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 441
+104.167.2.111:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414717222.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab5552d0>, 'Connection to 104.167.2.111 timed out. (connect timeout=30)'))
+ip_lst: 442
+180.250.158.198:80
+https://www.zhipin.com/job_detail/1414717222.html
+python爬虫工程师
+https://www.zhipin.com/job_detail/1414145933.html
+37.204.232.112:8081
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414145933.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 443
+119.254.11.50:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414145933.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 444
+58.254.172.160:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414145933.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 445
+168.0.217.161:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414145933.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab591190>, 'Connection to 168.0.217.161 timed out. (connect timeout=30)'))
+ip_lst: 446
+183.88.46.192:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414145933.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab5974d0>, 'Connection to 183.88.46.192 timed out. (connect timeout=30)'))
+ip_lst: 447
+118.97.29.203:8080
+https://www.zhipin.com/job_detail/1414145933.html
+Python工程师
+https://www.zhipin.com/job_detail/1413895448.html
+112.90.18.99:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413895448.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 405 Method Not Allowed',)))
+ip_lst: 448
+200.84.171.72:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413895448.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac559150>, 'Connection to 200.84.171.72 timed out. (connect timeout=30)'))
+ip_lst: 449
+212.95.152.247:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413895448.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 450
+203.162.13.33:3128
+https://www.zhipin.com/job_detail/1413895448.html
+python开发工程师（动漫）
+https://www.zhipin.com/job_detail/1412757181.html
+181.112.221.182:53281
+https://www.zhipin.com/job_detail/1412757181.html
+Python
+https://www.zhipin.com/job_detail/1410907949.html
+45.77.65.165:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410907949.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 403 Forbidden',)))
+ip_lst: 451
+184.82.128.210:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410907949.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab450f90>, 'Connection to 184.82.128.210 timed out. (connect timeout=30)'))
+ip_lst: 452
+157.255.129.13:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1410907949.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 453
+165.227.108.236:80
+https://www.zhipin.com/job_detail/1410907949.html
+Python开发工程师
+https://www.zhipin.com/job_detail/1414445617.html
+110.73.171.118:8123
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414445617.html (Caused by ProxyError('Cannot connect to proxy.', error(104, 'Connection reset by peer')))
+ip_lst: 454
+5.196.215.231:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414445617.html (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 455
+45.56.100.153:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414445617.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 500 Internal Server Error',)))
+ip_lst: 456
+167.250.15.248:53281
+https://www.zhipin.com/job_detail/1414445617.html
+高级Python工程师
+https://www.zhipin.com/job_detail/1413935340.html
+118.180.56.47:80
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1413935340.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 457
+148.206.189.228:80
+https://www.zhipin.com/job_detail/1413935340.html
+高级JAVA、Python开发工程师
+https://www.zhipin.com/job_detail/1414473912.html
+106.14.15.54:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414473912.html (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 400 Bad Request',)))
+ip_lst: 458
+223.17.124.132:8088
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /job_detail/1414473912.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab82dd50>, 'Connection to 223.17.124.132 timed out. (connect timeout=30)'))
+ip_lst: 459
+195.209.125.98:53281
+https://www.zhipin.com/job_detail/1414473912.html
+Python
+https://www.zhipin.com/c101010100/h_101010100/?query=python&page=13&ka=page-5
+114.248.151.82:9000
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 460
+177.5.146.58:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+ip_lst: 461
+120.199.64.163:8081
+('Connection aborted.', BadStatusLine("''",))
+ip_lst: 462
+36.73.113.209:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab4c31d0>, 'Connection to 36.73.113.209 timed out. (connect timeout=30)'))
+ip_lst: 463
+187.188.182.116:65103
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab4c3350>, 'Connection to 187.188.182.116 timed out. (connect timeout=30)'))
+ip_lst: 464
+185.17.132.66:53281
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdab4c3f90>, 'Connection to 185.17.132.66 timed out. (connect timeout=30)'))
+ip_lst: 465
+110.171.227.106:3128
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 503 Service Unavailable',)))
+ip_lst: 466
+157.255.128.164:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ProxyError('Cannot connect to proxy.', error('Tunnel connection failed: 404 Not Found',)))
+ip_lst: 467
+41.65.168.40:8080
+HTTPSConnectionPool(host='www.zhipin.com', port=443): Max retries exceeded with url: /c101010100/h_101010100/?query=python&page=13&ka=page-5 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7efdac383c90>, 'Connection to 41.65.168.40 timed out. (connect timeout=30)'))
+ip_lst: 468
+Traceback (most recent call last):
+  File "Boss.py", line 104, in <module>
+    for link in main(u):
+TypeError: 'bool' object is not iterable
