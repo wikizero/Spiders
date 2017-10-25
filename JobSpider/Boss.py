@@ -13,26 +13,19 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-lst = []
 
 
 def get_ip():
-    with open('proxyIp.txt') as fp:
-        ip = random.choice(fp.readlines()).strip()
-
-    if ip in lst:
-        return get_ip()
-    if verifyIp.is_valid_proxy(ip, 'https://www.zhipin.com'):
-        return ip
-    else:
-        lst.append(ip)
-        print 'ip_lst:', len(lst)
-        return get_ip()
+    con = redis.Redis()
+    while True:
+        proxy_ip = con.brpop('boss')[1]
+        if verifyIp.is_valid_proxy(proxy_ip, 'https://www.zhipin.com'):
+            return proxy_ip
 
 
 def send_request(url, times=0):
     times += 1
-    if times >= 10:
+    if times >= 20:
         return False
     ip = get_ip()
     print ip
@@ -48,15 +41,21 @@ def send_request(url, times=0):
         'Connection': 'keep-alive',
     }
     try:
-        ret = requests.get(url, headers=headers, proxies=proxies, timeout=30)
+        ret = requests.get(url, headers=headers, proxies=proxies, timeout=35)
     except Exception, e:
         print e
-        lst.append(ip)
-        print 'ip_lst:', len(lst)
         return send_request(url, times)
 
     if 200 <= ret.status_code < 300:
-        return ret.text
+        text = ret.text
+        if text:
+            # 该Ip可用 把该IP重新push进redis(从左边push进去)
+            con = redis.Redis()
+            con.lpush('boss', ip)
+            print ip, con.llen('boss')
+            return ret.text
+        else:
+            return send_request(url, times)
     else:
         return send_request(url, times)
 
@@ -98,10 +97,6 @@ def info(url):
         return data['position']
 
 if __name__ == '__main__':
-    url = ['https://www.zhipin.com/c101010100/h_101010100/?query=python&page=' + str(i+1) + '&ka=page-5' for i in xrange(30)]
-    for u in url[::-1]:
-        print u
-        # boss_url_task.apply_async(args=[u], queue='boss', )
-        for link in main(u):
-            print link
-            print info(link)
+    url = ['https://www.zhipin.com/c101010100/h_101010100/?query=python&page=' + str(i+1) + '&ka=page-5' for i in xrange(3)]
+    for u in url:
+        boss_url_task.apply_async(args=[u], queue='boss')

@@ -34,12 +34,14 @@ def catch_ip():
         'Connection': 'keep-alive',
     }
 
-    url = 'http://www.89ip.cn/apijk/?&tqsl=100&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
+    url = 'http://www.89ip.cn/apijk/?&tqsl=2000&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
     ret = requests.get(url, headers=headers)
     ips = re.findall(r'>([0-9.:]+)<', ret.text, flags=re.DOTALL)
+    print ips
     if ips:
         con = redis.Redis()
-        con.rpush('ips', *ips)
+        con.rpush('boss', *ips)
+        con.rpush('lagou', *ips)
         return len(ips)
     return False
 
@@ -47,3 +49,4 @@ def catch_ip():
 if __name__ == '__main__':
     # print is_valid_proxy('190.183.61.157:8080')
     catch_ip()
+    # pass

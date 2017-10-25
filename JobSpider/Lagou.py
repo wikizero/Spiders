@@ -15,32 +15,18 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 lst = []
 
-headers = {
-    'Host': 'www.lagou.com',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0',
-    'Connection': 'keep-alive',
-}
-
 
 def get_ip():
-    with open('proxyIp.txt') as fp:
-        ip = random.choice(fp.readlines()).strip()
-
-    if ip in lst:
-        return get_ip()
-    if verifyIp.is_valid_proxy(ip, 'https://www.lagou.com/'):
-        return ip
-    else:
-        lst.append(ip)
-        print 'ip_lst:', len(lst)
-        return get_ip()
+    con = redis.Redis()
+    while True:
+        proxy_ip = con.brpop('lagou')[1]
+        if verifyIp.is_valid_proxy(proxy_ip, 'https://www.lagou.com/'):
+            return proxy_ip
 
 
 def send_request(url, times=0):
     times += 1
-    if times >= 10:
+    if times >= 1000:
         return False
     ip = get_ip()
     print ip
@@ -48,16 +34,29 @@ def send_request(url, times=0):
         'http': 'http://'+ip,
         'https': 'https://'+ip
     }
+    headers = {
+        'Host': 'www.lagou.com',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0',
+        'Connection': 'keep-alive',
+    }
     try:
-        ret = requests.get(url, headers=headers, proxies=proxies, timeout=30)
+        ret = requests.get(url, headers=headers, proxies=proxies, timeout=35)
     except Exception, e:
         print e
-        lst.append(ip)
-        print 'ip_lst:', len(lst)
         return send_request(url, times)
 
     if 200 <= ret.status_code < 300:
-        return ret.text
+        text = ret.text
+        if text:
+            # 该Ip可用 把该IP重新push进redis(从左边push进去)
+            con = redis.Redis()
+            con.lpush('lagou', ip)
+            print ip, con.llen('lagou')
+            return ret.text
+        else:
+            return send_request(url, times)
     else:
         return send_request(url, times)
 
@@ -96,7 +95,7 @@ def info(url):
 
 
 if __name__ == '__main__':
-    url = ['https://www.lagou.com/zhaopin/Python/' + str(i+1) + '/' for i in xrange(2)]
+    url = ['https://www.lagou.com/zhaopin/Python/' + str(i+1) + '/' for i in xrange(30)]
     # print url
     for u in url:
         # lagou_url_task.apply_async(args=[u], queue='lagou')
