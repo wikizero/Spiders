@@ -23,8 +23,11 @@ class CatchProxyIpSpider(scrapy.Spider):
                 print ip, port, live, verify_time, http_type
                 ret = is_valid_proxy(ip, port)
                 if ret:
-                    self.r.rpush('ip', ip+':'+str(port))
+                    # self.r.rpush('ip', ip+':'+str(port))
+                    print ip+':'+str(port)
 
 
 if __name__ == '__main__':
-    print is_valid_proxy('120.78.15.63', 80)
+    # print is_valid_proxy('120.78.15.63', 80)
+    # CatchProxyIpSpider()
+    pass

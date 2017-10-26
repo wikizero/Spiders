@@ -51,7 +51,7 @@ def boss_url_task(url):
 
 
 if __name__ == '__main__':
-    # os.system('celery -A Tasks worker -n worker1 -Q boss -c 5  --loglevel=info')
-    # os.system('celery -A Tasks worker -n worker2 -Q lagou -c 1  --loglevel=info')
+    # os.system('celery -A Tasks worker -n worker1 -Q boss -c 4  --loglevel=info')
+    # os.system('celery -A Tasks worker -n worker2 -Q lagou -c 4  --loglevel=info')
     os.system('celery flower -A Tasks')
     # pass

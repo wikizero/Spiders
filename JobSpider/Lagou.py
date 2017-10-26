@@ -95,9 +95,10 @@ def info(url):
 
 
 if __name__ == '__main__':
-    url = ['https://www.lagou.com/zhaopin/Python/' + str(i+1) + '/' for i in xrange(30)]
+    # Java C C++
+    url = ['https://www.lagou.com/zhaopin/Java/' + str(i+1) + '/' for i in xrange(20)]
     # print url
     for u in url:
-        # lagou_url_task.apply_async(args=[u], queue='lagou')
-        for i in main(u):
-            print info(i)
+        lagou_url_task.apply_async(args=[u], queue='lagou')
+        # for i in main(u):
+        #     print info(i)
