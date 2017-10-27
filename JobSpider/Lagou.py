@@ -96,7 +96,7 @@ def info(url):
 
 if __name__ == '__main__':
     # Java C C++
-    url = ['https://www.lagou.com/zhaopin/Java/' + str(i+1) + '/' for i in xrange(20)]
+    url = ['https://www.lagou.com/zhaopin/C++/' + str(i+1) + '/' for i in xrange(5)]
     # print url
     for u in url:
         lagou_url_task.apply_async(args=[u], queue='lagou')

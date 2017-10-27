@@ -98,7 +98,7 @@ def info(url):
 
 if __name__ == '__main__':
     # java c c++
-    url = ['https://www.zhipin.com/c101010100/h_101010100/?query=java&page=' + str(i+1) + '&ka=page-5' for i in xrange(20)]
+    url = ['https://www.zhipin.com/c101010100/h_101010100/?query=C++&page=' + str(i+1) + '&ka=page-5' for i in xrange(5)]
     for u in url:
         boss_url_task.apply_async(args=[u], queue='boss')
 
