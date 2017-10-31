@@ -4,20 +4,39 @@ import redis
 import re
 
 
-def is_valid_proxy(ip_s, url):
-    ip, port = ip_s.split(':')
+def is_valid_proxy(ip, url):
     proxies = {
-           'http': 'http://' + str(ip) + ':' + str(port),
-        }
-
+        'http': 'http://'+ip,
+        'https': 'https://'+ip
+    }
     try:
         ret = requests.get(url, proxies=proxies, timeout=35)
+        print ret.text
     except Exception, e:
         print e
         return False
 
     if 200 <= ret.status_code < 300:
         return True
+    else:
+        return False
+
+
+def is_valid_proxy_v2(ip):
+    url = 'https://www.lagou.com/'
+    proxies = {
+        'http': 'http://'+ip,
+        'https': 'https://'+ip
+    }
+    try:
+        ret = requests.get(url, proxies=proxies, timeout=35)
+        print ret.text
+    except Exception, e:
+        print e
+        return False
+
+    if 200 <= ret.status_code < 300:
+        return ip
     else:
         return False
 
@@ -48,5 +67,12 @@ def catch_ip():
 
 if __name__ == '__main__':
     # print is_valid_proxy('190.183.61.157:8080')
-    catch_ip()
+    # catch_ip()
     # pass
+    # url = ['https://www.zhipin.com/c101010100/h_101010100/?query=Python&page={page}&ka=page-{page}'.format(page=str(i)) for i+1 in
+    #        xrange(30)]
+    # url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in
+    #        xrange(30)]
+    # for u in url:
+    #     print u
+    pass
