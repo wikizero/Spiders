@@ -25,7 +25,7 @@ def get_ip():
 
 def send_request(url, times=0):
     times += 1
-    if times >= 20:
+    if times >= 50:
         return False
     ip = get_ip()
     print ip
@@ -98,7 +98,9 @@ def info(url):
 
 if __name__ == '__main__':
     # java c c++
-    url = ['https://www.zhipin.com/c101010100/h_101010100/?query=C++&page=' + str(i+1) + '&ka=page-5' for i in xrange(5)]
+    # 数据挖掘
+    #url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(5)]
+    #url = ['https://www.zhipin.com/c101010100/h_101010100/?query=C&page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(5)]
     for u in url:
         boss_url_task.apply_async(args=[u], queue='boss')
 

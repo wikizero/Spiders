@@ -34,7 +34,7 @@ def catch_ip():
         'Connection': 'keep-alive',
     }
 
-    url = 'http://www.89ip.cn/apijk/?&tqsl=1000&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
+    url = 'http://www.89ip.cn/apijk/?&tqsl=5000&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
     ret = requests.get(url, headers=headers)
     ips = re.findall(r'>([0-9.:]+)<', ret.text, flags=re.DOTALL)
     print ips
@@ -42,6 +42,7 @@ def catch_ip():
         con = redis.Redis()
         con.rpush('boss', *ips)
         con.rpush('lagou', *ips)
+        print len(ips)
         return len(ips)
     return False
 

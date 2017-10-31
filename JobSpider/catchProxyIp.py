@@ -62,7 +62,7 @@ class CatchProxyIp:
 		try:
 			header = self.headers.copy()
 			header['Host'] = 'www.ip181.com'
-			urls = ['http://www.ip181.com/daili/{page}.html'.format(page=str(i)) for i in xrange(1, 20)]
+			urls = ['http://www.ip181.com/daili/{page}.html'.format(page=str(i)) for i in xrange(1, 5)]
 			frames = []
 			for link in urls:
 				time.sleep(1)
@@ -102,7 +102,7 @@ class CatchProxyIp:
 		try:
 			header = self.headers.copy()
 			header['Host'] = 'www.kuaidaili.com'
-			urls = ['http://www.kuaidaili.com/free/inha/{page}/'.format(page=str(i)) for i in xrange(1, 10)]
+			urls = ['http://www.kuaidaili.com/free/inha/{page}/'.format(page=str(i)) for i in xrange(1, 5)]
 			frames = []
 			for link in urls:
 				time.sleep(1)
