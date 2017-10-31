@@ -53,7 +53,7 @@ def catch_ip():
         'Connection': 'keep-alive',
     }
 
-    url = 'http://www.89ip.cn/apijk/?&tqsl=1000&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
+    url = 'http://www.89ip.cn/apijk/?&tqsl=5000&sxa=&sxb=&tta=&ports=&ktip=&cf=1'
     ret = requests.get(url, headers=headers)
     ips = re.findall(r'>([0-9.:]+)<', ret.text, flags=re.DOTALL)
     print ips
@@ -61,18 +61,12 @@ def catch_ip():
         con = redis.Redis()
         con.rpush('boss', *ips)
         con.rpush('lagou', *ips)
+        print len(ips)
         return len(ips)
     return False
 
 
 if __name__ == '__main__':
     # print is_valid_proxy('190.183.61.157:8080')
-    # catch_ip()
-    # pass
-    # url = ['https://www.zhipin.com/c101010100/h_101010100/?query=Python&page={page}&ka=page-{page}'.format(page=str(i)) for i+1 in
-    #        xrange(30)]
-    # url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in
-    #        xrange(30)]
-    # for u in url:
-    #     print u
-    pass
+    catch_ip()
+
