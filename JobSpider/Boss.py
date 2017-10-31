@@ -27,12 +27,7 @@ def send_request(url, times=0):
     times += 1
     if times >= 50:
         return False
-    ip = get_ip()
-    print ip
-    proxies = {
-        'http': 'http://'+ip,
-        'https': 'https://'+ip
-    }
+    ip = None
     headers = {
         'Host': 'www.zhipin.com',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -41,7 +36,18 @@ def send_request(url, times=0):
         'Connection': 'keep-alive',
     }
     try:
-        ret = requests.get(url, headers=headers, proxies=proxies, timeout=35)
+        t = datetime.now()
+        if t.second > 30:
+            ret = requests.get(url, headers=headers, timeout=10)
+            time.sleep(10)
+        else:
+            ip = get_ip()
+            print ip
+            proxies = {
+                'http': 'http://' + ip,
+                'https': 'https://' + ip
+            }
+            ret = requests.get(url, headers=headers, proxies=proxies, timeout=10)
     except Exception, e:
         print e
         return send_request(url, times)
@@ -50,9 +56,10 @@ def send_request(url, times=0):
         text = ret.text
         if text:
             # 该Ip可用 把该IP重新push进redis(从左边push进去)
-            con = redis.Redis()
-            con.lpush('boss', ip)
-            print ip, con.llen('boss')
+            if ip:
+                con = redis.Redis()
+                con.lpush('boss', ip)
+                print u'剩余IP数量:', con.llen('boss')
             return ret.text
         else:
             return send_request(url, times)
@@ -99,8 +106,10 @@ def info(url):
 if __name__ == '__main__':
     # java c c++
     # 数据挖掘
-    #url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(5)]
-    #url = ['https://www.zhipin.com/c101010100/h_101010100/?query=C&page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(5)]
+    pos_lst = ['JAVA', 'C', 'Python', 'PHP', 'IOS', 'Android']
+    url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(8)]
+    for p in pos_lst:
+        url += ['https://www.zhipin.com/c101010100/h_101010100/?query={pos}&page={page}&ka=page-{page}'.format(
+            page=str(i+1), pos=p) for i in xrange(8)]
     for u in url:
         boss_url_task.apply_async(args=[u], queue='boss')
-

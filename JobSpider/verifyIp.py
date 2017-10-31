@@ -10,7 +10,7 @@ def is_valid_proxy(ip, url):
         'https': 'https://'+ip
     }
     try:
-        ret = requests.get(url, proxies=proxies, timeout=35)
+        ret = requests.get(url, proxies=proxies, timeout=10)
         print ret.text
     except Exception, e:
         print e
@@ -29,7 +29,7 @@ def is_valid_proxy_v2(ip):
         'https': 'https://'+ip
     }
     try:
-        ret = requests.get(url, proxies=proxies, timeout=35)
+        ret = requests.get(url, proxies=proxies, timeout=10)
         print ret.text
     except Exception, e:
         print e

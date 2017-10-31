@@ -26,14 +26,9 @@ def get_ip():
 
 def send_request(url, times=0):
     times += 1
-    if times >= 1000:
+    if times >= 50:
         return False
-    ip = get_ip()
-    print ip
-    proxies = {
-        'http': 'http://'+ip,
-        'https': 'https://'+ip
-    }
+    ip = None
     headers = {
         'Host': 'www.lagou.com',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -42,7 +37,18 @@ def send_request(url, times=0):
         'Connection': 'keep-alive',
     }
     try:
-        ret = requests.get(url, headers=headers, proxies=proxies, timeout=35)
+        t = datetime.now()
+        if t.second > 30:
+            ret = requests.get(url, headers=headers, timeout=10)
+            time.sleep(10)
+        else:
+            ip = get_ip()
+            print ip
+            proxies = {
+                'http': 'http://' + ip,
+                'https': 'https://' + ip
+            }
+            ret = requests.get(url, headers=headers, proxies=proxies, timeout=10)
     except Exception, e:
         print e
         return send_request(url, times)
@@ -51,9 +57,10 @@ def send_request(url, times=0):
         text = ret.text
         if text:
             # 该Ip可用 把该IP重新push进redis(从左边push进去)
-            con = redis.Redis()
-            con.lpush('lagou', ip)
-            print ip, con.llen('lagou')
+            if ip:
+                con = redis.Redis()
+                con.lpush('lagou', ip)
+                print u'剩余IP数量:', con.llen('lagou')
             return ret.text
         else:
             return send_request(url, times)
@@ -95,10 +102,9 @@ def info(url):
 
 
 if __name__ == '__main__':
-    # Java C C++
-    url = ['https://www.lagou.com/zhaopin/C++/' + str(i+1) + '/' for i in xrange(5)]
-    # print url
+    pos_lst = ['Java', 'Python', 'C++', 'Android', 'PHP', 'shujuwajue']
+    url = []
+    for p in pos_lst:
+        url += ['https://www.lagou.com/zhaopin/{pos}/{page}/'.format(pos=p, page=str(i+1)) for i in xrange(30)]
     for u in url:
         lagou_url_task.apply_async(args=[u], queue='lagou')
-        # for i in main(u):
-        #     print info(i)
