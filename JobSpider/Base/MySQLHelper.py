@@ -29,7 +29,7 @@ class MySQLHelper:
 			raise Exception('Data type is not supported')
 
 	@staticmethod
-	def insert_many(table, source, engine, conflict=None, limit=10000, field_status=None):
+	def insert_many(table, source, engine, conflict=None, limit=1000, field_status=None):
 		db_name, con, cur = engine
 
 		if conflict == 'replace':
