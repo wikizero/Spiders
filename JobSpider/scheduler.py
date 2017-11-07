@@ -17,6 +17,8 @@ def start_boss_task():
 	time.sleep(5)
 	os.system("python catchProxyIp.py")
 	time.sleep(2)
+	os.system("python verifyip.py")
+	time.sleep(2)
 	os.system("python Boss.py")
 
 
@@ -30,6 +32,8 @@ def start_lagou_task():
 	os.system("nohup celery flower -A Tasks --address=0.0.0.0 --port=5555 &")
 	time.sleep(5)
 	os.system("python catchProxyIp.py")
+	time.sleep(2)
+	os.system("python verifyip.py")
 	time.sleep(2)
 	os.system("python Lagou.py")
 
