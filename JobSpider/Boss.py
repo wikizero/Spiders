@@ -8,7 +8,7 @@ from Base.MySQLHelper import *
 from JobModels import *
 import re
 from datetime import datetime
-import random
+from RedisQueue import RedisQueue
 import sys
 
 reload(sys)
@@ -73,7 +73,12 @@ def main(url):
     if not text:
         return False
     obj = BeautifulSoup(text, 'lxml')
-    return [base_url+div.h3.a.get('href') for div in obj.find_all('div', class_='info-primary')]
+    links = [base_url+div.h3.a.get('href') for div in obj.find_all('div', class_='info-primary')]
+    return links
+    # rq = RedisQueue()
+    # print links
+    # if links:
+    #     rq.push_task('boss_info', links)
 
 
 def info(url):
@@ -103,13 +108,21 @@ def info(url):
         Job.insert_many([data]).execute()
         return data['position']
 
+
 if __name__ == '__main__':
     # java c c++
     # 数据挖掘
     pos_lst = ['JAVA', 'C', 'Python', 'PHP', 'IOS', 'Android']
-    url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(8)]
+    url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(2)]
     for p in pos_lst:
         url += ['https://www.zhipin.com/c101010100/h_101010100/?query={pos}&page={page}&ka=page-{page}'.format(
-            page=str(i+1), pos=p) for i in xrange(8)]
+            page=str(i+1), pos=p) for i in xrange(2)]
+
+    # rq = RedisQueue()
+    #
+    # links = main(url[1])
+
     for u in url:
-        boss_url_task.apply_async(args=[u], queue='boss')
+        links = main(u)
+        for link in links:
+            info(link)

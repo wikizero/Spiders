@@ -5,6 +5,7 @@ import re
 from datetime import datetime
 import pprint
 import random
+import math
 from JobModels import *
 from Base.MySQLHelper import MySQLHelper
 import pymysql as mysql
@@ -59,6 +60,15 @@ class JobAnalysisFunc:
 			else:
 				return ''
 		data['type'] = data['position'].apply(func_type)
+
+		def func_salary(s):
+			ret = re.findall(r'(\d+)k', s, re.IGNORECASE)
+			if ret:
+				return ret[0] if len(ret) == 1 else int(ret[0]) + (int(ret[1]) - int(ret[0])) / 2
+			else:
+				return 0
+		data['salary'] = data['salary'].apply(func_salary)
+
 		now = datetime.now()
 		row, col = data.shape
 		data['create_date'] = [now for i in xrange(row)]
@@ -76,4 +86,7 @@ class JobAnalysisFunc:
 
 if __name__ == '__main__':
 	JobAnalysisFunc().analysis()
-	# print re.findall(r'python', u' Python工程师 ', flags=re.IGNORECASE)
+	# s = '10k-20k'
+	# ret = re.findall(r'(\d+)k', s)
+	# print ret[0] if len(ret) == 1 else int(ret[0]) + (int(ret[1])-int(ret[0]))/2
+
