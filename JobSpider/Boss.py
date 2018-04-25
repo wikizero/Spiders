@@ -104,15 +104,18 @@ def info(url):
     data['salary'] = info_obj.find('span', class_='badge').get_text().strip()
     data['address'], span, data['exp'], span, data['edu'] = info_obj.find('p').contents
     data['label'] = ';'.join([span.string for span in info_obj.find('div', class_='job-tags').find_all('span')])
-    if not Job.select().where(Job.job_id == data['job_id']):
-        Job.insert_many([data]).execute()
-        return data['position']
+
+    print data
+    # if not Job.select().where(Job.job_id == data['job_id']):
+    #     Job.insert_many([data]).execute()
+    #     return data['position']
 
 
 if __name__ == '__main__':
     # java c c++
     # 数据挖掘
     pos_lst = ['JAVA', 'C', 'Python', 'PHP', 'IOS', 'Android']
+    pos_lst = ['Python']
     url = ['https://www.zhipin.com/c101010100-p100104/?page={page}&ka=page-{page}'.format(page=str(i+1)) for i in xrange(2)]
     for p in pos_lst:
         url += ['https://www.zhipin.com/c101010100/h_101010100/?query={pos}&page={page}&ka=page-{page}'.format(
@@ -122,7 +125,9 @@ if __name__ == '__main__':
     #
     # links = main(url[1])
 
-    for u in url:
-        links = main(u)
-        for link in links:
-            info(link)
+    # for u in url:
+    #     links = main(u)
+    #     for link in links:
+    #         info(link)
+    url = 'https://www.zhipin.com/job_detail/1419098850.html?ka=index_rcmd_job_6'
+    info(url)
