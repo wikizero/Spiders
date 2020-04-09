@@ -68,7 +68,7 @@ class DownloadTranscript():
 
             print(talk_id)
             # insert or save
-            self.db.update({'_id': talk_id}, data, upsert=True)
+            self.db.raw.update({'_id': talk_id}, data, upsert=True)
         except Exception:
             pass
 
@@ -76,7 +76,7 @@ class DownloadTranscript():
         for url in self.get_page_url():
             print(url)
             self.get_detail(url)
-            time.sleep(2)
+            time.sleep(3)
 
 
 if __name__ == '__main__':
