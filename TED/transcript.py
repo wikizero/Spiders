@@ -48,26 +48,29 @@ class DownloadTranscript():
 
     def get_detail(self, detail_url):
         data = {}
-        res = requests.get(detail_url)
-        bs = BeautifulSoup(res.text, features="lxml")
+        try:
+            res = requests.get(detail_url)
+            bs = BeautifulSoup(res.text, features="lxml")
 
-        # talk_id  <meta property="al:ios:url" content="ted://talks/59159?source=facebook" />
-        talk_id_content = bs.select("meta[property$='al:ios:url']")[0]['content']
-        talk_id = int(urlparse(talk_id_content).path[1:])
+            # talk_id  <meta property="al:ios:url" content="ted://talks/59159?source=facebook" />
+            talk_id_content = bs.select("meta[property$='al:ios:url']")[0]['content']
+            talk_id = int(urlparse(talk_id_content).path[1:])
 
-        data_spec = requests.get(f'https://www.ted.com/talks/{talk_id}/metadata.json').json()
+            data_spec = requests.get(f'https://www.ted.com/talks/{talk_id}/metadata.json').json()
 
-        data['_id'] = talk_id
-        data['desc'] = data_spec['description']
-        data['tags'] = data_spec['talks'][0]['tags']
-        data['title'] = data_spec['talks'][0]['title']
-        data['video_views'] = data_spec['viewed_count']
-        data['related_talks'] = [line['id'] for line in data_spec['talks'][0]['related_talks']]
-        data['transcript'] = self.get_transcript(talk_id)
+            data['_id'] = talk_id
+            data['desc'] = data_spec['description']
+            data['tags'] = data_spec['talks'][0]['tags']
+            data['title'] = data_spec['talks'][0]['title']
+            data['video_views'] = data_spec['viewed_count']
+            data['related_talks'] = [line['id'] for line in data_spec['talks'][0]['related_talks']]
+            data['transcript'] = self.get_transcript(talk_id)
 
-        print(talk_id)
-        # insert or save
-        # self.db.update({'_id': talk_id}, data, upsert=True)
+            print(talk_id)
+            # insert or save
+            self.db.update({'_id': talk_id}, data, upsert=True)
+        except Exception:
+            pass
 
     def catch(self):
         for url in self.get_page_url():
@@ -79,6 +82,6 @@ class DownloadTranscript():
 if __name__ == '__main__':
     # TODO 上传CSDN 基金数据
     dt = DownloadTranscript()
-    detail_url = 'https://www.ted.com/talks/rebecca_knill_how_technology_has_changed_what_it_s_like_to_be_deaf'
-    # dt.get_detail(detail_url)
-    dt.catch()
+    detail_url = 'https://www.ted.com/talks/alexandra_auer_the_intangible_effects_of_walls_apr_2020'
+    dt.get_detail(detail_url)
+    # dt.catch()
