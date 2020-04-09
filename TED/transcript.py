@@ -37,10 +37,13 @@ class DownloadTranscript():
         options = ['en', 'zh-cn']
         for opt in options:
             url = f'https://www.ted.com/talks/{talk_id}/transcript.json?language={opt}'
-            res = requests.get(url, timeout=5)
-            if res.status_code == 200:
-                data[opt] = [''.join([p['text'].replace('\n', '') for p in line['cues']]) for line in
-                             res.json()['paragraphs']]
+            try:
+                res = requests.get(url, timeout=5)
+                if res.status_code == 200:
+                    data[opt] = [''.join([p['text'].replace('\n', '') for p in line['cues']]) for line in
+                                 res.json()['paragraphs']]
+            except Exception:
+                pass
         return data
 
     def get_detail(self, detail_url):
