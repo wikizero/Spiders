@@ -1,3 +1,4 @@
+import time
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin, urlsplit, urlparse
 
@@ -99,7 +100,7 @@ class DownloadTranscript():
             links = [urljoin(url, link['href']) for link in bs.select('#browse-results h4 .ga-link')]
             for link in links:
                 pool.submit(self.get_detail, link)
-            print('-'*30)
+            time.sleep(5)
 
 
 if __name__ == '__main__':
