@@ -91,12 +91,12 @@ class DownloadTranscript():
         bs = BeautifulSoup(res.text, features="lxml")
         max_page = int([page.text for page in bs.select('.pagination a')][-2])
         print(f'max_page:{max_page}')
+        pool = ThreadPoolExecutor(max_workers=5)
 
         for i in range(1, max_page + 1):
             url = f'https://www.ted.com/talks?page={i}'
             res = requests.get(url)
             bs = BeautifulSoup(res.text, features="lxml")
-            pool = ThreadPoolExecutor(max_workers=5)
             links = [urljoin(url, link['href']) for link in bs.select('#browse-results h4 .ga-link')]
             for link in links:
                 pool.submit(self.get_detail, link)
